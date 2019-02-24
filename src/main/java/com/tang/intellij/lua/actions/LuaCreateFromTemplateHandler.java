@@ -19,6 +19,7 @@ package com.tang.intellij.lua.actions;
 import com.intellij.ide.fileTemplates.DefaultCreateFromTemplateHandler;
 import com.intellij.ide.fileTemplates.FileTemplate;
 import com.tang.intellij.lua.lang.LuaFileType;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -26,7 +27,7 @@ import com.tang.intellij.lua.lang.LuaFileType;
  */
 public class LuaCreateFromTemplateHandler extends DefaultCreateFromTemplateHandler {
     @Override
-    public boolean handlesTemplate(FileTemplate template) {
+    public boolean handlesTemplate(@NotNull FileTemplate template) {
         return template.isTemplateOfType(LuaFileType.INSTANCE);
     }
 }

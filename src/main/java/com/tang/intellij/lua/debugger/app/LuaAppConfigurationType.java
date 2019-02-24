@@ -32,6 +32,7 @@ public class LuaAppConfigurationType implements ConfigurationType {
 
     private LuaAppConfigurationFactory factory = new LuaAppConfigurationFactory(this);
 
+    @NotNull
     @Override
     public String getDisplayName() {
         return "Lua Application";

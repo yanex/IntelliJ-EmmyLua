@@ -136,7 +136,7 @@ public class LuaLookupElement extends LookupElement implements Comparable<Lookup
     }
 
     @Override
-    public void handleInsert(InsertionContext context) {
+    public void handleInsert(@NotNull InsertionContext context) {
         myHandler.handleInsert(context, this);
     }
 
